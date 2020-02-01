@@ -41,6 +41,8 @@ Submissions.txt     Text file used for submission
 - Do not **hardcode** anything as we will edit `data` and do some simple tests. Any edit to `data` takes the following forms: 1) changing the number of questions 2) changing the number of options to each question 3) changing the number of results 4) changing the text of any question, option, or result. You can assume that `data` will be well-formatted.
 - Your quiz should be functional. The response shown doesn't have to match UTB's actual form, but it should at least be reproducible. Selecting answers and submitting should show one of the responses. Reloading the page and selecting the same answers should show the same response. 
 
+---
+
 ### Required Features
 - For each question, there should be at most 1 option that is chosen at the same time.
 - When the user clicks on **show me my results** button, he/she should not be able to modify the form.
