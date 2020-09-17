@@ -1,6 +1,6 @@
 # Fall '20 Challenge
 
-> If you feel more comfortable working with React, check out [this other repo](https://github.com/dailypenn/s20-challenge-react).
+> If you feel more comfortable working with React, check out [this other repo](https://github.com/dailypenn/f20-challenge-react).
 
 Hey there! Welcome to the DP's web dev challenge~
 
