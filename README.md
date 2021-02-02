@@ -1,8 +1,8 @@
-# Fall '20 Challenge
+# Spring '21 Challenge
 
-> If you feel more comfortable working with React, check out [this other repo](https://github.com/dailypenn/f20-challenge-react).
+> If you feel more comfortable working with React, check out [this other repo](https://github.com/dailypenn/challenge-react).
 
-Hey there! Welcome to the DP's web dev challenge~
+Hey there! Welcome to the DP's tech challenge~
 
 The goal of this challenge is for you to demonstrate the ability to:
 
@@ -18,7 +18,7 @@ a quiz for [Under the Button](https://www.underthebutton.com/article/2020/01/par
 ---
 
 ### Getting Started
-- Make a copy of this repository by either running `git clone https://github.com/dailypenn/f20-challenge.git` on your local computer or simply click on the Green **Clone or download** button and then click on **Download ZIP**.
+- Make a copy of this repository by either running `git clone https://github.com/dailypenn/challenge-react.git` on your local computer or simply click on the Green **Clone or download** button and then click on **Download ZIP**.
 - Open `index.hml` in a web browser to view the page.
 - If you made any changes to your code, just reload `index.html` in your browser to see the updates.
 
@@ -58,7 +58,7 @@ Submissions.txt     Text file used for submission
 ---
 
 ### Getting Help
-If you have any questions about the challenge or need some help, send an email to **Peter Chen** (chen@dailypennsylvanian.com) or **Daniel Tao** (dtao@seas.upenn.edu)
+If you have any questions about the challenge or need some help, send an email to **Peter Chen** (chen@dailypennsylvanian.com)
 
 ---
 
@@ -69,4 +69,4 @@ Either one of the following will work
 
 Besides your working code, please also take some time to complete `Submissions.txt` so we can have a better understanding of how you feel about the challenge.
 
-All submissions should be emailed to **chen@dailypennsylvanian.com** by **Wednesday, Sep 23rd at 11:59pm**.
+All submissions should be emailed to **chen@dailypennsylvanian.com** by **Wednesday, Fed 10th at 11:59pm**.
