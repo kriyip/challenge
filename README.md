@@ -18,7 +18,7 @@ a quiz for [Under the Button](https://www.underthebutton.com/article/2020/01/par
 ---
 
 ### Getting Started
-- Make a copy of this repository by either running `git clone https://github.com/dailypenn/challenge.git` on your local computer or simply click on the Green **Clone or download** button and then click on **Download ZIP**.
+- Make a copy of this repository by either running `git clone https://github.com/dailypenn/challenge.git` on your local computer or simply click on the Green **Code** button and then click on **Download ZIP**.
 - Open `index.hml` in a web browser to view the page.
 - If you made any changes to your code, just reload `index.html` in your browser to see the updates.
 
