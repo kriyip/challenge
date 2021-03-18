@@ -58,7 +58,7 @@ Submissions.txt     Text file used for submission
 ---
 
 ### Getting Help
-If you have any questions about the challenge or need some help, send an email to **Peter Chen** (chen@dailypennsylvanian.com)
+If you have any questions about the challenge or need some help, send an email to **Raunaq Singh** (singh@dailypennsylvanian.com)
 
 ---
 
@@ -69,4 +69,4 @@ Either one of the following will work
 
 Besides your working code, please also take some time to complete `Submissions.txt` so we can have a better understanding of how you feel about the challenge.
 
-All submissions should be emailed to **chen@dailypennsylvanian.com** by **Thursday, Feb 11 at 11:59pm**.
+All submissions should be emailed to **singh@dailypennsylvanian.com** by **Thursday, Feb 11 at 11:59pm**.
