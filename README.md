@@ -1,4 +1,4 @@
-# Fall '21 Challenge
+# Spring '22 Challenge
 
 > If you feel more comfortable working with React, check out [this other repo](https://github.com/dailypenn/challenge-react).
 
