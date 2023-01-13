@@ -1,5 +1,5 @@
 # Spring '23 Challenge
-
+### Applications will open very soon!
 > If you feel more comfortable working with React, check out [this other repo](https://github.com/dailypenn/challenge-react).
 
 Hey there! Welcome to the DP's tech challenge~
