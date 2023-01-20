@@ -1,5 +1,4 @@
 # Spring '23 Challenge
-### Applications will open very soon!
 > If you feel more comfortable working with React, check out [this other repo](https://github.com/dailypenn/challenge-react).
 
 Hey there! Welcome to the DP's tech challenge~
@@ -63,8 +62,10 @@ If you have any questions about the challenge or need some help, send an email t
 ---
 
 ### Submission
-Either one of the following will work:
+Either **ONE** of the following will work:
 - Fork this repository and commit your changes to your fork, and submit the **GitHub link** to your fork (please make the repo **public** so we can have access to your code)
 - Zip your code and submit the compressed package
 
 Besides your working code, please also take some time to complete `Submissions.txt` so we can have a better understanding of how you feel about the challenge.
+
+After that, you should make your submission [HERE](https://developers.thedp.com/apply). Congratulations, you have finished the challenge!
