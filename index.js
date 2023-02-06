@@ -68,3 +68,74 @@ const data = {
 }
 
 // Write your code below...
+function getResult() {
+    const answers = [];
+    const frequencies = {};
+
+    data["questions"].forEach(function(question, index) {
+        const selection = $('input[name="question_'+index+'"]:checked').val();
+        answers.push(selection);
+        frequencies[selection] = frequencies[selection] ? frequencies[selection] + 1 : 1;
+    })
+
+    console.log(answers, frequencies);
+    const result = Object.keys(frequencies).reduce(function(a, b) {
+        return frequencies[a] > frequencies[b] ? a : b;
+    })
+    const result_index = result.toLocaleLowerCase().charCodeAt(0) - 97;
+
+    $('#result').html("<h3>Result:</h3>" + data["results"][result_index])
+    console.log(result, result_index);
+
+    $('input:radio').attr("disabled", true);
+}
+
+$(document).ready(function() {
+    console.log("start")
+    // load questions
+    data["questions"].forEach(function (question, index) {
+        const question_index = "question_" + index;
+
+        const question_container = document.createElement("div");
+        question_container.setAttribute("id", question_index);
+        question_container.setAttribute("class", "question");
+
+        const answer_container = document.createElement("div");
+        answer_container.setAttribute("class", "radio_answers")
+
+        $(question_container).append("<h3>Question " + (index + 1) + ": " + question.prompt + "</h3>");
+        Object.entries(question.options).forEach(function ([key, val]) {
+            // console.log(key, val)
+            const answer_choice = key + ": " + val;
+            const answer_index = question_index + "_" + key;
+            $(answer_container).append(
+                "<input type='radio' id=" + answer_index + "' name=" + question_index + " title=" + key + " value=" + key + ">" +
+                "<label for=" + answer_index + "'>" + answer_choice + "</label>" +
+                "<br>");
+        })
+        $(question_container).append(answer_container);
+        $('#quiz').append(question_container)
+    })
+
+    $('#submit').on('click', function (event) {
+        event.preventDefault();
+        var isAnswered = true;
+        $(".questions").each(function () {
+            // find first unanswered question
+            if (isAnswered && $(this).find("input[type='radio']:checked").length === 0) {
+                // move to first unanswered question
+                $('html, body').animate({scrollTop: $(this).offset().top}, 1000);
+                this.setAttribute("class", "not_answered")
+                isAnswered = false;
+            }
+        })
+        if (isAnswered) {
+            getResult();
+        }
+    })
+
+    $('#retake').click('click', function () {
+        $('input:radio').prop("checked", false).attr("disabled", false)
+        $('#result').html('')
+    })
+})
