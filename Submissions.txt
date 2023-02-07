@@ -1,7 +1,8 @@
 1. How many hours did you spend on this challenge?
-
+    I spent 4.5 hours total on this challenge.
 2. Describe the features you have implemented.
-
+    I implemented all the quiz features. I also implemented a feature that, if the quiz isn't completely filled, scrolls the user to their first unanswered question.
 3. Describe the difficulties you faced (if any) while working on the challenge and how you tackled them.
-
+    The largest challenge I faced was with some of the styling; in particular, I had some difficulties with changing the background colors of the radio buttons due to the way that I structured the DOM tree. I got over this issue by researching the documentation for some workarounds.
 4. How much time can you spend each week working for DP Developers?
+    I can spend between 6 and 8 hours.

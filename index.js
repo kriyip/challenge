@@ -74,8 +74,14 @@ function getResult() {
 
     data["questions"].forEach(function(question, index) {
         const selection = $('input[name="question_'+index+'"]:checked').val();
-        answers.push(selection);
-        frequencies[selection] = frequencies[selection] ? frequencies[selection] + 1 : 1;
+        if (selection) {
+            answers.push(selection);
+            frequencies[selection] = frequencies[selection] ? frequencies[selection] + 1 : 1;
+        } else { //unanswered question
+            $('html, body').animate({scrollTop: $('#question_'+index).offset().top}, 1000);
+            this.setAttribute("class", "not_answered")
+
+        }
     })
 
     console.log(answers, frequencies);
@@ -103,15 +109,16 @@ $(document).ready(function() {
         const answer_container = document.createElement("div");
         answer_container.setAttribute("class", "radio_answers")
 
-        $(question_container).append("<h3>Question " + (index + 1) + ": " + question.prompt + "</h3>");
+        $(question_container).append("<h4>Question " + (index + 1) + ": " + question.prompt + "</h4>");
         Object.entries(question.options).forEach(function ([key, val]) {
             // console.log(key, val)
             const answer_choice = key + ": " + val;
             const answer_index = question_index + "_" + key;
             $(answer_container).append(
-                "<input type='radio' id=" + answer_index + "' name=" + question_index + " title=" + key + " value=" + key + ">" +
+                "<div class='indiv_radio_container'>" +
+                "<input type='radio' id=" + answer_index + "' name=" + question_index + " title=" + answer_index + " value=" + key + ">" +
                 "<label for=" + answer_index + "'>" + answer_choice + "</label>" +
-                "<br>");
+                "</div><br>");
         })
         $(question_container).append(answer_container);
         $('#quiz').append(question_container)
@@ -119,23 +126,13 @@ $(document).ready(function() {
 
     $('#submit').on('click', function (event) {
         event.preventDefault();
-        var isAnswered = true;
-        $(".questions").each(function () {
-            // find first unanswered question
-            if (isAnswered && $(this).find("input[type='radio']:checked").length === 0) {
-                // move to first unanswered question
-                $('html, body').animate({scrollTop: $(this).offset().top}, 1000);
-                this.setAttribute("class", "not_answered")
-                isAnswered = false;
-            }
-        })
-        if (isAnswered) {
-            getResult();
-        }
+        getResult();
     })
 
     $('#retake').click('click', function () {
         $('input:radio').prop("checked", false).attr("disabled", false)
         $('#result').html('')
     })
+
+
 })
